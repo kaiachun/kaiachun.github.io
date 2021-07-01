@@ -103,5 +103,8 @@ theme: fluid
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
+# 上傳到github pages
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/kaiachun/kaiachun.github.io.git
+  branch: gh-pages

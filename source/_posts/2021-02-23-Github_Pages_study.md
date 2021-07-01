@@ -131,36 +131,11 @@ git remote set-url origin https://github.com/PanteraSama/landingPageResponsive.g
 
 
 ## 參考網址
-[Jeykll官方文件](https://jekyllrb.com/docs/){:target="_blank"}  
-[Jekyll模板語法](https://gist.github.com/JJediny/a466eed62cee30ad45e2){:target="_blank"}  
-[在Winodws上運作jekyll](https://wcc723.github.io/jekyll/2014/01/13/windows-jekyll-server/){:target="_blank"}  
-[Github Pages + jekyll 全面介紹極簡搭建個人網站和部落格](https://www.itread01.com/iqhklc.html){:target="_blank"}  
+[Jeykll官方文件](https://jekyllrb.com/docs/)
+[Jekyll模板語法](https://gist.github.com/JJediny/a466eed62cee30ad45e2)
+[在Winodws上運作jekyll](https://wcc723.github.io/jekyll/2014/01/13/windows-jekyll-server/)
+[Github Pages + jekyll 全面介紹極簡搭建個人網站和部落格](https://www.itread01.com/iqhklc.html)
 
-<!-- 顯示留言區 -->
-{% if site.comments %}
-
-<div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://kaia-hsu.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-
-{% endif %}
 
 
 
