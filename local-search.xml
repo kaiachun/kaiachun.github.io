@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="/2021/07/01/hello-world/"/>
+    <url>/2021/07/01/hello-world/</url>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>六角JS直播班心得</title>
+    <link href="/2021/04/20/2021-04-20-%E5%85%AD%E8%A7%92JS%E7%9B%B4%E6%92%AD%E7%8F%AD%E5%BF%83%E5%BE%97/"/>
+    <url>/2021/04/20/2021-04-20-%E5%85%AD%E8%A7%92JS%E7%9B%B4%E6%92%AD%E7%8F%AD%E5%BF%83%E5%BE%97/</url>
+    
+    <content type="html"><![CDATA[<h2>1. 當初為甚麼報名這堂課?</h2>自己在因緣際會下就上了資管系，還記得剛開始學程式時跑成功時感動的心情，現在也一樣感動，只要沒有bug就好XD。<br>在學時學的都是老師逼你學的，不知不覺中學了JS、Andorid、VB、Python、R...，但會的都只是皮毛，<br>畢業後才發覺，完了!我其實甚麼都不會。<br>在碰過的眾多程式語言中，我發現一定會需要的東西就是 <font color='red'>呈現結果 </font>，而用瀏覽器呈現就需要用到JS。<br>想當初曾在udemy購買六角線上課程自學，但是發現自己是非常惰性堅強的人ლ(ﾟдﾟლ).，~~需要有人好好鞭打才會~~想要好好努力學習，就踏進了JS直播班。![](https://i.imgur.com/0hTuXov.png)<h2>2. 第一週到第八週的學習過程</h2><p>為了能好好上課，大手筆多買了一個螢幕，每一次上課都會一邊看直播，一邊用HackMd做筆記。<br><br>一開始都有跟上進度，過了期中試煉後…就跟不上啦~orz每週都在不斷的趕任務啊!<br><img src="https://i.imgur.com/psnwXNA.png"></p><h2>3. 最大的收穫是?</h2><p>雖然後期都在被任務追著跑，但也深入的了解的很多JS的基礎，以前在學校上課時老師只會簡單帶過的東西，洧杰老師都講得非常清楚，也補足了很多以前懵懵懂懂的觀念。<br><br>再加上分組學習，組裡的大神們解釋很多不太清楚的觀念，也幫眼殘的我debug，每次上完課，當我還在思考時就已經有人寫出來了，大家都不用睡覺是不是XD<br><img src="https://i.imgur.com/kbnBofF.png"></p><h2>4. 最喜歡直播班的那些活動?</h2><p>最喜歡每日任務的活動，有很具體的範例可以練習，也能練熟基本語法和程式邏輯。<br><br>我絕對不會說最喜歡的不是抽獎是因為我都沒抽中!<br><img src="https://i.imgur.com/5GStMji.png"></p><h2>5. 如果時光能倒流，會希望自己再次注意那些細節?</h2><p>會希望自己不要再那麼廢，可以好好利用時間把作業和任務多練習幾次。<br><img src="https://i.imgur.com/p6bvfnh.png"></p><h2>6. 身為學長姐，分享些想入坑的新同學一些勉勵的話</h2><p>程式其實不難，難的是在怎麼把想要的結果用code呈現。<br><br>騙你的，程式好難啊!!<br>但是不要怕，這裡有很多人跟你一起挑戰，要相信每一天的你都會比昨天的自己進步一點點，當你最後回頭看看，沿路一定都是美好的風景。</p><p>大家加油~也強迫自己要加油!!<br><br>還有Vue在等我😭<br><img src="https://i.imgur.com/gAZpkMS.png"></p><!-- 顯示留言區 -->]]></content>
+    
+    
+    <categories>
+      
+      <category>learn</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>study</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>用GitHub Pages建立技術部落格</title>
+    <link href="/2021/02/05/2021-02-23-Github_Pages_study/"/>
+    <url>/2021/02/05/2021-02-23-Github_Pages_study/</url>
+    
+    <content type="html"><![CDATA[<h2 id="Github-Pages-介紹"><a href="#Github-Pages-介紹" class="headerlink" title="Github Pages 介紹"></a>Github Pages 介紹</h2><ul><li>優點:  </li></ul><ol><li>免費，有Github 帳號就可建立  </li><li>支援 Jekyll ，可以快速建立  </li></ol><ul><li>缺點:  </li></ul><ol><li>只能呈現靜態頁面，無法讀取資料庫、進行使用者登入等  </li><li>所有 Github Pages 皆是公開的</li></ol><h2 id="使用素材"><a href="#使用素材" class="headerlink" title="使用素材"></a>使用素材</h2><ol><li>Github 帳號  </li><li>Git bash  </li><li>Jekyll  </li><li>Disqus(加選)  </li><li>Github Desktop(加選)  </li></ol><h2 id="實作流程"><a href="#實作流程" class="headerlink" title="實作流程"></a>實作流程</h2><h3 id="建立Github-Pages-倉庫"><a href="#建立Github-Pages-倉庫" class="headerlink" title="建立Github Pages 倉庫"></a>建立Github Pages 倉庫</h3><ol><li>建立 Github Pages 用的 Repository<br><img src="https://i.imgur.com/3EIcPGX.png"></li><li>上傳blog或測試網頁<br>(可自己寫或使用現成版型，可以參考:<br><a href="http://jekyllthemes.org/">http://jekyllthemes.org/</a><br><a href="https://jekyllthemes.io/">https://jekyllthemes.io/</a><br><a href="https://jekyllthemes.io/free">https://jekyllthemes.io/free</a><br>)</li><li>   在 setting 點選網址即可執行<br><img src="https://i.imgur.com/kSPhAtT.png"></li></ol><h3 id="在本地端測試"><a href="#在本地端測試" class="headerlink" title="在本地端測試"></a>在本地端測試</h3><ol><li><p> 安裝 Jekyll 環境<br>目的為方便測試用<br>(詳細安裝步驟可參考<a href="https://wcc723.github.io/jekyll/2014/01/13/windows-jekyll-server/">https://wcc723.github.io/jekyll/2014/01/13/windows-jekyll-server/</a>)  </p></li><li><p>開啟 Start Command Prompt with Ruby  </p></li><li><p>cmd cd 到你的網頁所在位置  </p></li><li><p>執行bundle exec jekyll server 即可預覽，預設port為4000  </p></li><li><p>(加選)可安裝Github Desktop 圖形化介面</p></li><li><p>更改你的Blog內容<br>此處以我使用的 Blog 樣式作範例  </p><figure class="highlight subunit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs subunit">layout: 分類<br>title: &#x27;標題&#x27;<br>date: 日期(格式必須為YYYY-MM-DD HH:MM:SS)<br>categories: 分類<br><span class="hljs-keyword">tags:</span> study<br>image: &#x27;是否放入圖片&#x27;<br>lead_text: &#x27;網頁描述&#x27;<br>```  <br><br>7. Jekyll 網站架構  <br></code></pre></td></tr></table></figure><p>_data/global.yml  # 網站的基本設定資料<br>_includes/  # 存放網站中會重複使用的HTML檔<br>_layouots/  # 存放各頁面的HTMML檔<br>_posts/  # 在此處撰寫Markdowm文件(也可以加上一些基本的HTML和JS)，Jekyll會自動讀取顯示成文章<br>```<br>p.s. Markdown語法要換行要在結尾的部分空兩格  </p></li><li><p>完成後記得上傳到Github  </p></li><li><p>成功了~</p></li></ol><h3 id="建立留言板"><a href="#建立留言板" class="headerlink" title="建立留言板"></a>建立留言板</h3><ol><li><p>到<a href="https://disqus.com/">Disqus</a>進行註冊<br><img src="https://i.imgur.com/mpAsfff.png"></p></li><li><p>修改 _config.yml 檔<br><img src="https://i.imgur.com/5QLjzmT.png">  </p></li><li><p>在想顯示留言的內容下方加上下列程式<br>(在這裡貼上code會出現排版錯誤，下面列出如何取得這段程式碼)</p></li></ol><ul><li>進入Disqus官網，並登入<br><img src="https://i.imgur.com/5peiYLJ.png"></li><li>點選<br><img src="https://i.imgur.com/4C3lgAa.png">  </li><li>複製這段程式碼到要顯示的位置<br><img src="https://i.imgur.com/m8GLIaV.png">  </li></ul><ol start="4"><li>成功了~<br><img src="https://i.imgur.com/Dx8dg3x.png"></li></ol><h2 id="故障排除"><a href="#故障排除" class="headerlink" title="故障排除"></a>故障排除</h2><p>(在coding的瞬間，我多改了一點，bug不在遙遠 在你身邊~~)</p><ol><li>could not find ‘bundler’ required by …<br><img src="https://i.imgur.com/uv8K8KM.png"><br>解決方法:<br>前提:需先關閉防毒軟體，才可以進行安裝<br>安裝:  </li></ol><ul><li> bundle update –bundler  </li><li>   gem install bundler:1.13.7  </li><li>   gem update –system  </li><li>   執行啟動: bundle exec jekyll server  </li></ul><ol start="2"><li><p> jekyll server 報錯</p><pre><code class="cmd">/Library/Ruby/Gems/2.3.0/gems/bundler-1.16.1/lib/bundler/runtime.rb:313:in check_for_activated_spec!’: You have already activated public_suffix 3.0.2, but your Gemfile requires public_suffix 3.0.0. Prepending bundle exec to your command may solve this. (Gem::LoadError)</code></pre><p>解決方法:<br>bundle exec jekyll server  </p></li><li><p> The page build completed successfully, but returned the following warning for the <code>main</code> branch:<br>解決方法:<br>更改_config.yml<br><img src="https://i.imgur.com/Xp8uebG.png">  </p></li><li><p>Could not read from remote repository.<br>解決方法:<br>git remote set-url origin <a href="https://github.com/PanteraSama/landingPageResponsive.git">https://github.com/PanteraSama/landingPageResponsive.git</a>  </p></li></ol><p><font color='red'>可能還有許多種的錯誤，族繁不及備載，請自行Google XD</font></p><hr><h2 id="參考網址"><a href="#參考網址" class="headerlink" title="參考網址"></a>參考網址</h2><p><a href="https://jekyllrb.com/docs/">Jeykll官方文件</a>{:target=”_blank”}<br><a href="https://gist.github.com/JJediny/a466eed62cee30ad45e2">Jekyll模板語法</a>{:target=”_blank”}<br><a href="https://wcc723.github.io/jekyll/2014/01/13/windows-jekyll-server/">在Winodws上運作jekyll</a>{:target=”_blank”}<br><a href="https://www.itread01.com/iqhklc.html">Github Pages + jekyll 全面介紹極簡搭建個人網站和部落格</a>{:target=”_blank”}  </p><!-- 顯示留言區 -->]]></content>
+    
+    
+    <categories>
+      
+      <category>learn</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>study</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>
