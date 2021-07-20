@@ -14,11 +14,11 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="description" content="如何在Github Pages上建立自己的Blog">
+  <meta name="description" content="六角JS直播班完課心得">
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-  <title>用GitHub Pages建立技術部落格 - kaia貓喵喵叫</title>
+  <title>六角JS直播班心得 - kaia貓喵喵叫</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
 
@@ -174,12 +174,12 @@
 </nav>
 
     <div class="banner" id="banner" parallax=true
-         style="background: url('https://blinkbits.com/wp-content/uploads/2018/10/Blogs-1.jpg') no-repeat center center;
+         style="background: url('https://images.unsplash.com/photo-1613905780946-26b73b6f6e11?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d3Jvbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="用GitHub Pages建立技術部落格">
+            <span class="h2" id="subtitle" title="六角JS直播班心得">
               
             </span>
 
@@ -189,8 +189,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-02-05 18:20" pubdate>
-        2021年2月5日 晚上
+      <time datetime="2021-04-20 18:26" pubdate>
+        2021年4月20日 晚上
       </time>
     </span>
   
@@ -201,7 +201,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      697 字
+      641 字
     </span>
   
 
@@ -211,7 +211,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      15
+      11
        分鐘
     </span>
   
@@ -245,94 +245,16 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">用GitHub Pages建立技術部落格</h1>
+            <h1 style="display: none">六角JS直播班心得</h1>
             
             <div class="markdown-body">
-              <h2 id="Github-Pages-介紹"><a href="#Github-Pages-介紹" class="headerlink" title="Github Pages 介紹"></a>Github Pages 介紹</h2><ul>
-<li>優點:  </li>
-</ul>
-<ol>
-<li>免費，有Github 帳號就可建立  </li>
-<li>支援 Jekyll ，可以快速建立  </li>
-</ol>
-<ul>
-<li>缺點:  </li>
-</ul>
-<ol>
-<li>只能呈現靜態頁面，無法讀取資料庫、進行使用者登入等  </li>
-<li>所有 Github Pages 皆是公開的</li>
-</ol>
-<h2 id="使用素材"><a href="#使用素材" class="headerlink" title="使用素材"></a>使用素材</h2><ol>
-<li>Github 帳號  </li>
-<li>Git bash  </li>
-<li>Jekyll  </li>
-<li>Disqus(加選)  </li>
-<li>Github Desktop(加選)  </li>
-</ol>
-<h2 id="實作流程"><a href="#實作流程" class="headerlink" title="實作流程"></a>實作流程</h2><h3 id="建立Github-Pages-倉庫"><a href="#建立Github-Pages-倉庫" class="headerlink" title="建立Github Pages 倉庫"></a>建立Github Pages 倉庫</h3><ol>
-<li>建立 Github Pages 用的 Repository<br><img src="https://i.imgur.com/3EIcPGX.png" srcset="/img/loading.gif" lazyload></li>
-<li>上傳blog或測試網頁<br>(可自己寫或使用現成版型，可以參考:<br><a target="_blank" rel="noopener" href="http://jekyllthemes.org/">http://jekyllthemes.org/</a><br><a target="_blank" rel="noopener" href="https://jekyllthemes.io/">https://jekyllthemes.io/</a><br><a target="_blank" rel="noopener" href="https://jekyllthemes.io/free">https://jekyllthemes.io/free</a><br>)</li>
-<li>   在 setting 點選網址即可執行<br><img src="https://i.imgur.com/kSPhAtT.png" srcset="/img/loading.gif" lazyload></li>
-</ol>
-<h3 id="在本地端測試"><a href="#在本地端測試" class="headerlink" title="在本地端測試"></a>在本地端測試</h3><ol>
-<li><p> 安裝 Jekyll 環境<br>目的為方便測試用<br>(詳細安裝步驟可參考<a target="_blank" rel="noopener" href="https://wcc723.github.io/jekyll/2014/01/13/windows-jekyll-server/">https://wcc723.github.io/jekyll/2014/01/13/windows-jekyll-server/</a>)  </p>
-</li>
-<li><p>開啟 Start Command Prompt with Ruby  </p>
-</li>
-<li><p>cmd cd 到你的網頁所在位置  </p>
-</li>
-<li><p>執行bundle exec jekyll server 即可預覽，預設port為4000  </p>
-</li>
-<li><p>(加選)可安裝Github Desktop 圖形化介面</p>
-</li>
-<li><p>更改你的Blog內容<br>此處以我使用的 Blog 樣式作範例  </p>
-<figure class="highlight subunit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs subunit">layout: 分類<br>title: &#x27;標題&#x27;<br>date: 日期(格式必須為YYYY-MM-DD HH:MM:SS)<br>categories: 分類<br><span class="hljs-keyword">tags:</span> study<br>image: &#x27;是否放入圖片&#x27;<br>lead_text: &#x27;網頁描述&#x27;<br>```  <br><br>7. Jekyll 網站架構  <br></code></pre></td></tr></table></figure>
-<p>_data/global.yml  # 網站的基本設定資料<br>_includes/  # 存放網站中會重複使用的HTML檔<br>_layouots/  # 存放各頁面的HTMML檔<br>_posts/  # 在此處撰寫Markdowm文件(也可以加上一些基本的HTML和JS)，Jekyll會自動讀取顯示成文章<br>```<br>p.s. Markdown語法要換行要在結尾的部分空兩格  </p>
-</li>
-<li><p>完成後記得上傳到Github  </p>
-</li>
-<li><p>成功了~</p>
-</li>
-</ol>
-<h3 id="建立留言板"><a href="#建立留言板" class="headerlink" title="建立留言板"></a>建立留言板</h3><ol>
-<li><p>到<a target="_blank" rel="noopener" href="https://disqus.com/">Disqus</a>進行註冊<br><img src="https://i.imgur.com/mpAsfff.png" srcset="/img/loading.gif" lazyload></p>
-</li>
-<li><p>修改 _config.yml 檔<br><img src="https://i.imgur.com/5QLjzmT.png" srcset="/img/loading.gif" lazyload>  </p>
-</li>
-<li><p>在想顯示留言的內容下方加上下列程式<br>(在這裡貼上code會出現排版錯誤，下面列出如何取得這段程式碼)</p>
-</li>
-</ol>
-<ul>
-<li>進入Disqus官網，並登入<br><img src="https://i.imgur.com/5peiYLJ.png" srcset="/img/loading.gif" lazyload></li>
-<li>點選<br><img src="https://i.imgur.com/4C3lgAa.png" srcset="/img/loading.gif" lazyload>  </li>
-<li>複製這段程式碼到要顯示的位置<br><img src="https://i.imgur.com/m8GLIaV.png" srcset="/img/loading.gif" lazyload>  </li>
-</ul>
-<ol start="4">
-<li>成功了~<br><img src="https://i.imgur.com/Dx8dg3x.png" srcset="/img/loading.gif" lazyload></li>
-</ol>
-<h2 id="故障排除"><a href="#故障排除" class="headerlink" title="故障排除"></a>故障排除</h2><p>(在coding的瞬間，我多改了一點，bug不在遙遠 在你身邊~~)</p>
-<ol>
-<li>could not find ‘bundler’ required by …<br><img src="https://i.imgur.com/uv8K8KM.png" srcset="/img/loading.gif" lazyload><br>解決方法:<br>前提:需先關閉防毒軟體，才可以進行安裝<br>安裝:  </li>
-</ol>
-<ul>
-<li> bundle update –bundler  </li>
-<li>   gem install bundler:1.13.7  </li>
-<li>   gem update –system  </li>
-<li>   執行啟動: bundle exec jekyll server  </li>
-</ul>
-<ol start="2">
-<li><p> jekyll server 報錯</p>
-<pre><code class="cmd">/Library/Ruby/Gems/2.3.0/gems/bundler-1.16.1/lib/bundler/runtime.rb:313:in check_for_activated_spec!’: You have already activated public_suffix 3.0.2, but your Gemfile requires public_suffix 3.0.0. Prepending bundle exec to your command may solve this. (Gem::LoadError)
-</code></pre>
-<p>解決方法:<br>bundle exec jekyll server  </p>
-</li>
-<li><p> The page build completed successfully, but returned the following warning for the <code>main</code> branch:<br>解決方法:<br>更改_config.yml<br><img src="https://i.imgur.com/Xp8uebG.png" srcset="/img/loading.gif" lazyload>  </p>
-</li>
-<li><p>Could not read from remote repository.<br>解決方法:<br>git remote set-url origin <a target="_blank" rel="noopener" href="https://github.com/PanteraSama/landingPageResponsive.git">https://github.com/PanteraSama/landingPageResponsive.git</a>  </p>
-</li>
-</ol>
-<p><font color='red'>可能還有許多種的錯誤，族繁不及備載，請自行Google XD</font></p>
-<h2 id="參考網址"><a href="#參考網址" class="headerlink" title="參考網址"></a>參考網址</h2><p><a target="_blank" rel="noopener" href="https://jekyllrb.com/docs/">Jeykll官方文件</a><br><a target="_blank" rel="noopener" href="https://gist.github.com/JJediny/a466eed62cee30ad45e2">Jekyll模板語法</a><br><a target="_blank" rel="noopener" href="https://wcc723.github.io/jekyll/2014/01/13/windows-jekyll-server/">在Winodws上運作jekyll</a><br><a target="_blank" rel="noopener" href="https://www.itread01.com/iqhklc.html">Github Pages + jekyll 全面介紹極簡搭建個人網站和部落格</a></p>
+              <h2 id="1-報名原因"><a href="#1-報名原因" class="headerlink" title="1. 報名原因"></a>1. 報名原因</h2><p>自己在因緣際會下就上了資管系，還記得剛開始學程式時跑成功時感動的心情，現在也一樣感動，只要沒有bug就好XD。<br>在學時學的都是老師逼你學的，不知不覺中學了JS、Andorid、VB、Python、R…，但會的都只是皮毛，<br>畢業後才發覺，完了!我其實甚麼都不會。<br>在碰過的眾多程式語言中，我發現一定會需要的東西就是 <font color='red'>呈現結果 </font>，而用瀏覽器呈現就需要用到JS。<br>想當初曾在udemy購買六角線上課程自學，但是發現自己是非常惰性堅強的人<br>ლ(ﾟдﾟლ).，<del>需要有人好好鞭打才會</del><br>想要好好努力學習，就踏進了JS直播班。</p>
+<h2 id="2-直播課學習過程"><a href="#2-直播課學習過程" class="headerlink" title="2. 直播課學習過程"></a>2. 直播課學習過程</h2><p>為了能好好上課，大手筆多買了一個螢幕，每一次上課都會一邊看直播，一邊用HackMd做筆記。<br>一開始都有跟上進度，過了期中試煉後…就跟不上啦~orz每週都在不斷的趕任務啊!<br><img src="https://i.imgur.com/psnwXNA.png" srcset="/img/loading.gif" lazyload></p>
+<h2 id="3-最大的收穫"><a href="#3-最大的收穫" class="headerlink" title="3. 最大的收穫?"></a>3. 最大的收穫?</h2><p>雖然後期都在被任務追著跑，但也深入的了解的很多JS的基礎，以前在學校上課時老師只會簡單帶過的東西，洧杰老師都講得非常清楚，也補足了很多以前懵懵懂懂的觀念。<br>再加上分組學習，組裡的大神們解釋很多不太清楚的觀念，也幫眼殘的我debug，每次上完課，當我還在思考時就已經有人寫出來了，大家都不用睡覺是不是XD<br><img src="https://i.imgur.com/kbnBofF.png" srcset="/img/loading.gif" lazyload></p>
+<h2 id="4-最喜歡的活動"><a href="#4-最喜歡的活動" class="headerlink" title="4. 最喜歡的活動?"></a>4. 最喜歡的活動?</h2><p>最喜歡每日任務的活動，有很具體的範例可以練習，也能練熟基本語法和程式邏輯。<br>我絕對不會說最喜歡的不是抽獎是因為我都沒抽中!<br><img src="https://i.imgur.com/5GStMji.png" srcset="/img/loading.gif" lazyload></p>
+<h2 id="5-學習過程中希望自己再多注意哪些細節"><a href="#5-學習過程中希望自己再多注意哪些細節" class="headerlink" title="5. 學習過程中希望自己再多注意哪些細節?"></a>5. 學習過程中希望自己再多注意哪些細節?</h2><p>會希望自己不要再那麼廢，可以好好利用時間把作業和任務多練習幾次。<br><img src="https://i.imgur.com/p6bvfnh.png" srcset="/img/loading.gif" lazyload></p>
+<h2 id="6-給想入坑的同學…"><a href="#6-給想入坑的同學…" class="headerlink" title="6. 給想入坑的同學…"></a>6. 給想入坑的同學…</h2><p>程式其實不難，難的是在怎麼把想要的結果用code呈現。<br>騙你的，程式好難啊!!<br>但是不要怕，這裡有很多人跟你一起挑戰，要相信每一天的你都會比昨天的自己進步一點點，當你最後回頭看看，沿路一定都是美好的風景。</p>
+<p>大家加油~也強迫自己要加油!!<br>還有Vue在等我😭<br><img src="https://i.imgur.com/gAZpkMS.png" srcset="/img/loading.gif" lazyload></p>
 
             </div>
             <hr>
@@ -350,7 +272,7 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/Github-Pages/">Github Pages</a>
+                      <a class="hover-with-bg" href="/tags/%E5%BF%83%E5%BE%97/">心得</a>
                     
                   </div>
                 
@@ -361,15 +283,21 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2021/04/20/2021-04-20-%E5%85%AD%E8%A7%92JS%E7%9B%B4%E6%92%AD%E7%8F%AD%E5%BF%83%E5%BE%97/">
+                      <a href="/2021/07/03/%E5%85%AD%E8%A7%92Vue%E7%9B%B4%E6%92%AD%E7%8F%AD%E5%BF%83%E5%BE%97/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">六角JS直播班心得</span>
+                        <span class="hidden-mobile">六角Vue直播班心得</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2021/02/05/%E7%94%A8GitHub%20Pages%E5%BB%BA%E7%AB%8B%E6%8A%80%E8%A1%93%E9%83%A8%E8%90%BD%E6%A0%BC/">
+                        <span class="hidden-mobile">用GitHub Pages建立技術部落格</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
@@ -391,8 +319,8 @@
           // 加入繁體中文設定
           this.language = "zh_TW"; // Disqus 顯示語言
 
-          this.page.url = 'http://example.com/2021/02/05/2021-02-05-%E7%94%A8GitHub%20Pages%E5%BB%BA%E7%AB%8B%E6%8A%80%E8%A1%93%E9%83%A8%E8%90%BD%E6%A0%BC/';
-          this.page.identifier = '/2021/02/05/2021-02-05-%E7%94%A8GitHub%20Pages%E5%BB%BA%E7%AB%8B%E6%8A%80%E8%A1%93%E9%83%A8%E8%90%BD%E6%A0%BC/';
+          this.page.url = 'http://example.com/2021/04/20/%E5%85%AD%E8%A7%92JS%E7%9B%B4%E6%92%AD%E7%8F%AD%E5%BF%83%E5%BE%97/';
+          this.page.identifier = '/2021/04/20/%E5%85%AD%E8%A7%92JS%E7%9B%B4%E6%92%AD%E7%8F%AD%E5%BF%83%E5%BE%97/';
         };
         Fluid.utils.loadComments('#disqus_thread', function() {
           var d = document, s = d.createElement('script');
