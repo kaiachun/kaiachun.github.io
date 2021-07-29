@@ -4,11 +4,36 @@
   
   
   <entry>
+    <title>與成功有約</title>
+    <link href="/2021/07/29/%E8%88%87%E6%88%90%E5%8A%9F%E6%9C%89%E7%B4%84/"/>
+    <url>/2021/07/29/%E8%88%87%E6%88%90%E5%8A%9F%E6%9C%89%E7%B4%84/</url>
+    
+    <content type="html"><![CDATA[<h2 id="閱讀紀錄：與成功有約"><a href="#閱讀紀錄：與成功有約" class="headerlink" title="閱讀紀錄：與成功有約"></a>閱讀紀錄：與成功有約</h2><ul><li>作者：Stephen R. Covey (史蒂芬・柯維)</li><li>說書講者：一號課堂講師 歐陽立中</li></ul><style>  .box{    position: relative;    width: 100%;    height: 0;    padding-bottom: 56.25%;  }  .box iframe {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;}</style><div class="box"><iframe src="https://onedrive.live.com/embed?cid=D93E82DA919BDD3A&amp;resid=D93E82DA919BDD3A%21125&amp;authkey=AH2ksmSiRIX_HhU&amp;em=2&amp;wdAr=1.7777777777777777&amp;wdEaa=1"frameborder="0"></div>]]></content>
+    
+    
+    <categories>
+      
+      <category>kaia貓閱讀中</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>閱讀</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>使用 Hexo Fluid 主題架站起手式</title>
     <link href="/2021/07/20/%E4%BD%BF%E7%94%A8Hexo%20Fluid%20%E4%B8%BB%E9%A1%8C%E6%9E%B6%E7%AB%99%E8%B5%B7%E6%89%8B%E5%BC%8F/"/>
     <url>/2021/07/20/%E4%BD%BF%E7%94%A8Hexo%20Fluid%20%E4%B8%BB%E9%A1%8C%E6%9E%B6%E7%AB%99%E8%B5%B7%E6%89%8B%E5%BC%8F/</url>
     
-    <content type="html"><![CDATA[<h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>原本的 Blog 主題只是隨便找個能看的，最近上了六角的直播課程，決定要好好做筆記，仔細查了一下覺得 Fluid 這款蠻好看的 <del>(而且有中文)</del>，因此就決定重新改主題囉。</p><h2 id="Hexo-介紹"><a href="#Hexo-介紹" class="headerlink" title="Hexo 介紹"></a>Hexo 介紹</h2><p>Hexo 是基於 Node.js 所製作的靜態網頁產生工具。<br><strong>優點</strong></p><ol><li>編譯速度快</li><li>外掛套件多</li><li>支援 Markdown 格式</li><li>支援一鍵佈屬</li></ol><p><strong>缺點</strong></p><ol><li>僅支援靜態網頁</li></ol><h2 id="來準備開發環境吧"><a href="#來準備開發環境吧" class="headerlink" title="來準備開發環境吧"></a>來準備開發環境吧</h2><h3 id="安裝-Node-js"><a href="#安裝-Node-js" class="headerlink" title="安裝 Node.js"></a>安裝 Node.js</h3><p>到 <a href="https://nodejs.org/en/download/">Node.js 官網</a>下載軟體並安裝 LTS 版本(長期支援版 Long-term support，較穩定)。</p><h3 id="安裝-Git"><a href="#安裝-Git" class="headerlink" title="安裝 Git"></a>安裝 Git</h3><p>到 <a href="https://git-scm.com/downloads">Git 官網</a>下載軟體並安裝。</p><h3 id="檢查一下"><a href="#檢查一下" class="headerlink" title="檢查一下"></a>檢查一下</h3><p>別急著進到下一步，身為工程師小步測試是很重要滴~</p><ul><li>檢查  <figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs crmsh"><span class="hljs-keyword">node</span> <span class="hljs-title">-v</span><br>npm -v<br></code></pre></td></tr></table></figure>  有跳出版本號就代表成功了~<blockquote><p>此處的 npm 指令會隨著 Node.js 一起安裝喔~</p></blockquote></li></ul><h2 id="安裝Hexo"><a href="#安裝Hexo" class="headerlink" title="安裝Hexo"></a>安裝Hexo</h2><ol><li><p>安裝 Hexo<br><code>npm install hexo-cli -g</code><br>記得隨時檢查一下有沒有安裝成功<br><code>hexo -v</code></p></li><li><p>建立 Hexo 初始化資料夾<br>以下使用資料夾名稱為 blog<br><code>hexo init [資料夾名稱]</code><br>意即<br><code>hexo init blog</code></p></li></ol><h2 id="套用-Fluid-主題"><a href="#套用-Fluid-主題" class="headerlink" title="套用 Fluid 主題"></a>套用 Fluid 主題</h2><ol><li><p>切進資料夾中的themes目錄<br><code>cd blog\themes</code></p></li><li><p>安裝 Fluid 主題<br><code>git clone https://github.com/fluid-dev/hexo-theme-fluid.git</code></p></li></ol><ul><li>注意此處用 git 抓下來的檔案會在 hexo-theme-fluid 資料夾內，要將資料夾內的檔案都拉到外層</li></ul><ol start="3"><li><p>更改 blog下的 _config.yml 檔<br>找到 Extensions 的位置，改為 <code>theme: fluid</code></p></li><li><p>本地端測試<br><code>hexo server</code> 或 <code>hexo s</code></p></li></ol><h2 id="成功畫面"><a href="#成功畫面" class="headerlink" title="成功畫面"></a>成功畫面</h2><p><img src="https://i.imgur.com/tDQI4pT.png"><br>就可以看到用 Fluid 主題架設的 Blog 啦~</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>原本的 Blog 主題只是隨便找個能看的，最近上了六角的直播課程，決定要好好做筆記，仔細查了一下覺得 Fluid 這款蠻好看的 <del>(而且有中文)</del>，因此就決定重新改主題囉。</p><h2 id="Hexo-介紹"><a href="#Hexo-介紹" class="headerlink" title="Hexo 介紹"></a>Hexo 介紹</h2><p>Hexo 是基於 Node.js 所製作的靜態網頁產生工具。<br><strong>優點</strong></p><ol><li>編譯速度快</li><li>外掛套件多</li><li>支援 Markdown 格式</li><li>支援一鍵佈屬</li></ol><p><strong>缺點</strong></p><ol><li>僅支援靜態網頁</li></ol><h2 id="來準備開發環境吧"><a href="#來準備開發環境吧" class="headerlink" title="來準備開發環境吧"></a>來準備開發環境吧</h2><h3 id="安裝-Node-js"><a href="#安裝-Node-js" class="headerlink" title="安裝 Node.js"></a>安裝 Node.js</h3><p>到 <a href="https://nodejs.org/en/download/">Node.js 官網</a>下載軟體並安裝 LTS 版本(長期支援版 Long-term support，較穩定)。</p><h3 id="安裝-Git"><a href="#安裝-Git" class="headerlink" title="安裝 Git"></a>安裝 Git</h3><p>到 <a href="https://git-scm.com/downloads">Git 官網</a>下載軟體並安裝。</p><h3 id="檢查一下"><a href="#檢查一下" class="headerlink" title="檢查一下"></a>檢查一下</h3><p>別急著進到下一步，身為工程師小步測試是很重要滴~</p><ul><li>檢查  <figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs crmsh"><span class="hljs-keyword">node</span> <span class="hljs-title">-v</span><br>npm -v<br></code></pre></td></tr></table></figure>  有跳出版本號就代表成功了~<blockquote><p>此處的 npm 指令會隨著 Node.js 一起安裝喔~</p></blockquote></li></ul><h2 id="安裝Hexo"><a href="#安裝Hexo" class="headerlink" title="安裝Hexo"></a>安裝Hexo</h2><ol><li><p>安裝 Hexo<br><code>npm install hexo-cli -g</code><br>記得隨時檢查一下有沒有安裝成功<br><code>hexo -v</code></p></li><li><p>建立 Hexo 初始化資料夾<br>以下使用資料夾名稱為 blog<br><code>hexo init [資料夾名稱]</code><br>意即<br><code>hexo init blog</code></p></li></ol><h2 id="套用-Fluid-主題"><a href="#套用-Fluid-主題" class="headerlink" title="套用 Fluid 主題"></a>套用 Fluid 主題</h2><ol><li><p>切進資料夾中的themes目錄<br><code>cd blog\themes</code></p></li><li><p>安裝 Fluid 主題<br><code>git clone https://github.com/fluid-dev/hexo-theme-fluid.git</code></p></li></ol><ul><li>注意此處用 git 抓下來的檔案會在 hexo-theme-fluid 資料夾內，要將資料夾內的檔案都拉到外層</li></ul><ol start="3"><li><p>更改 blog下的 _config.yml 檔<br>找到 Extensions 的位置，改為 <code>theme: fluid</code></p></li><li><p>本地端測試<br><code>hexo server</code> 或 <code>hexo s</code></p></li></ol><h2 id="成功畫面"><a href="#成功畫面" class="headerlink" title="成功畫面"></a>成功畫面</h2><p><img src="https://i.imgur.com/tDQI4pT.png"><br>就可以看到用 Fluid 主題架設的 Blog 啦~</p><h2 id="部署到你的Github-Pages"><a href="#部署到你的Github-Pages" class="headerlink" title="部署到你的Github Pages"></a>部署到你的Github Pages</h2><h2 id="插曲：Github-Mail-灌爆你的信箱"><a href="#插曲：Github-Mail-灌爆你的信箱" class="headerlink" title="插曲：Github Mail 灌爆你的信箱"></a>插曲：Github Mail 灌爆你的信箱</h2>]]></content>
     
     
     <categories>
