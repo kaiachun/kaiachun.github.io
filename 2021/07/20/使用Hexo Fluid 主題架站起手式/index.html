@@ -151,7 +151,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/links/">
                 <i class="iconfont icon-link-fill"></i>
-                連結
+                作品連結
               </a>
             </li>
           
@@ -201,7 +201,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      419 字
+      851 字
     </span>
   
 
@@ -211,7 +211,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      8
+      17
        分鐘
     </span>
   
@@ -292,7 +292,35 @@
 </li>
 </ol>
 <h2 id="成功畫面"><a href="#成功畫面" class="headerlink" title="成功畫面"></a>成功畫面</h2><p><img src="https://i.imgur.com/tDQI4pT.png" srcset="/img/loading.gif" lazyload><br>就可以看到用 Fluid 主題架設的 Blog 啦~</p>
-<h2 id="部署到你的Github-Pages"><a href="#部署到你的Github-Pages" class="headerlink" title="部署到你的Github Pages"></a>部署到你的Github Pages</h2><h2 id="插曲：Github-Mail-灌爆你的信箱"><a href="#插曲：Github-Mail-灌爆你的信箱" class="headerlink" title="插曲：Github Mail 灌爆你的信箱"></a>插曲：Github Mail 灌爆你的信箱</h2>
+<h2 id="部署到你的Github-Pages"><a href="#部署到你的Github-Pages" class="headerlink" title="部署到你的Github Pages"></a>部署到你的Github Pages</h2><h3 id="建立你的個人網址"><a href="#建立你的個人網址" class="headerlink" title="建立你的個人網址"></a>建立你的個人網址</h3><ol>
+<li>到 <a target="_blank" rel="noopener" href="https://github.com/">Github官網</a> 建立blog用網址<br> 新增一個儲存庫(Repositories)，名稱須和你的 github 帳號名稱相同<br> <img src="https://i.imgur.com/RnIxIYg.png" srcset="/img/loading.gif" lazyload> <img src="https://i.imgur.com/qYPjLrF.png" srcset="/img/loading.gif" lazyload></li>
+<li>建立後會出現一些基本的 Git 指令介紹，可以不用管它</li>
+</ol>
+<h3 id="上傳你在本地端修改的檔案到-Github-pages"><a href="#上傳你在本地端修改的檔案到-Github-pages" class="headerlink" title="上傳你在本地端修改的檔案到 Github pages"></a>上傳你在本地端修改的檔案到 Github pages</h3><ol>
+<li><p>在你的 Hexo資料夾內找到_config.yml檔</p>
+<blockquote>
+<p>注意此處的 _config.yml 檔位置在根目錄下</p>
+</blockquote>
+</li>
+<li><p>複製儲存庫位置<br> 建議使用 SSH 連線，因從8月13日開始，github不再支持密碼方式的身份驗證，會要求使用 Token 的身份驗證方式<br> <img src="https://i.imgur.com/6FP3S2B.png" srcset="/img/loading.gif" lazyload></p>
+</li>
+<li><p>加入一鍵上傳程式碼 (把剛剛複製的在 <code>repo:</code> 後面貼上)</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs stylus">deploy:<br>  type: git<br>  repo: git@github<span class="hljs-selector-class">.com</span>:<span class="hljs-selector-attr">[你的github帳號]</span>/<span class="hljs-selector-attr">[你的github帳號]</span><span class="hljs-selector-class">.github</span><span class="hljs-selector-class">.io</span><span class="hljs-selector-class">.git</span><br>  branch: gh-pages<br>  message: <span class="hljs-string">&quot;可寫上你的變更內容&quot;</span><br></code></pre></td></tr></table></figure>
+<p>此處的 branch 可新建 gh-pages 或到 Github Setting 做更改 </p>
+<blockquote>
+<p>更改位置為 Settings &gt; Pages &gt; 第一項 Source 中的 Branch</p>
+</blockquote>
+</li>
+<li><p>執行一鍵部署<br> 使用 cmd 執行 <code>hexo deploy</code> 或 <code>hexo d</code><br> (若使用 VS code 可直接利用快捷鍵 <code>ctrl+&#39; </code> 開啟終端機)</p>
+<blockquote>
+<p>若有時會出現錯誤，可先清除緩存，再重新部署 <code>hexo clean</code>或 <code>hexo cl</code> 再 <code>hexo deploy</code> 或 <code>hexo d</code></p>
+</blockquote>
+</li>
+</ol>
+<h2 id="插曲：Github-Mail-灌爆你的信箱"><a href="#插曲：Github-Mail-灌爆你的信箱" class="headerlink" title="插曲：Github Mail 灌爆你的信箱"></a>插曲：Github Mail 灌爆你的信箱</h2><p>當你快樂的部署你的 blog 時，你的手機不斷的叮咚叮咚，恭喜你，你的信箱被 Github 灌爆了。 </p>
+<p>他的信件內回提示你不能使用目前的版本，本人使用最簡單的解決方法，就是降版。<br>到根目錄的 package.json 中，將<code>&quot;dependencies&quot;: &#123; &quot;hexo&quot;: &quot;^5.0.0&quot;,</code> 改為 <code>&quot;dependencies&quot;: &#123; &quot;hexo&quot;: &quot;3.3.1&quot;,</code> ，就可以囉~</p>
+<h2 id="參考網站"><a href="#參考網站" class="headerlink" title="參考網站"></a>參考網站</h2><p><a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues/2588">https://github.com/hexojs/hexo/issues/2588</a><br><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/one-command-deployment.html">https://hexo.io/zh-cn/docs/one-command-deployment.html</a></p>
+
             </div>
             <hr>
             <div>
