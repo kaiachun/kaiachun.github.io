@@ -201,7 +201,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      697 字
+      756 字
     </span>
   
 
@@ -211,7 +211,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      15
+      17
        分鐘
     </span>
   
@@ -248,91 +248,135 @@
             <h1 style="display: none">用GitHub Pages建立技術部落格</h1>
             
             <div class="markdown-body">
-              <h2 id="Github-Pages-介紹"><a href="#Github-Pages-介紹" class="headerlink" title="Github Pages 介紹"></a>Github Pages 介紹</h2><ul>
-<li>優點:  </li>
+              <h2 id="Github-Pages-介紹"><a class="header-anchor" href="#Github-Pages-介紹"></a>Github Pages 介紹</h2>
+<ul>
+<li>優點:</li>
 </ul>
 <ol>
-<li>免費，有Github 帳號就可建立  </li>
-<li>支援 Jekyll ，可以快速建立  </li>
+<li>免費，有Github 帳號就可建立</li>
+<li>支援 Jekyll ，可以快速建立</li>
 </ol>
 <ul>
-<li>缺點:  </li>
+<li>缺點:</li>
 </ul>
 <ol>
-<li>只能呈現靜態頁面，無法讀取資料庫、進行使用者登入等  </li>
+<li>只能呈現靜態頁面，無法讀取資料庫、進行使用者登入等</li>
 <li>所有 Github Pages 皆是公開的</li>
 </ol>
-<h2 id="使用素材"><a href="#使用素材" class="headerlink" title="使用素材"></a>使用素材</h2><ol>
-<li>Github 帳號  </li>
-<li>Git bash  </li>
-<li>Jekyll  </li>
-<li>Disqus(加選)  </li>
-<li>Github Desktop(加選)  </li>
-</ol>
-<h2 id="實作流程"><a href="#實作流程" class="headerlink" title="實作流程"></a>實作流程</h2><h3 id="建立Github-Pages-倉庫"><a href="#建立Github-Pages-倉庫" class="headerlink" title="建立Github Pages 倉庫"></a>建立Github Pages 倉庫</h3><ol>
-<li>建立 Github Pages 用的 Repository<br><img src="https://i.imgur.com/3EIcPGX.png" srcset="/img/loading.gif" lazyload></li>
-<li>上傳blog或測試網頁<br>(可自己寫或使用現成版型，可以參考:<br><a target="_blank" rel="noopener" href="http://jekyllthemes.org/">http://jekyllthemes.org/</a><br><a target="_blank" rel="noopener" href="https://jekyllthemes.io/">https://jekyllthemes.io/</a><br><a target="_blank" rel="noopener" href="https://jekyllthemes.io/free">https://jekyllthemes.io/free</a><br>)</li>
-<li>   在 setting 點選網址即可執行<br><img src="https://i.imgur.com/kSPhAtT.png" srcset="/img/loading.gif" lazyload></li>
-</ol>
-<h3 id="在本地端測試"><a href="#在本地端測試" class="headerlink" title="在本地端測試"></a>在本地端測試</h3><ol>
-<li><p> 安裝 Jekyll 環境<br>目的為方便測試用<br>(詳細安裝步驟可參考<a target="_blank" rel="noopener" href="https://wcc723.github.io/jekyll/2014/01/13/windows-jekyll-server/">https://wcc723.github.io/jekyll/2014/01/13/windows-jekyll-server/</a>)  </p>
-</li>
-<li><p>開啟 Start Command Prompt with Ruby  </p>
-</li>
-<li><p>cmd cd 到你的網頁所在位置  </p>
-</li>
-<li><p>執行bundle exec jekyll server 即可預覽，預設port為4000  </p>
-</li>
-<li><p>(加選)可安裝Github Desktop 圖形化介面</p>
-</li>
-<li><p>更改你的Blog內容<br>此處以我使用的 Blog 樣式作範例  </p>
-<figure class="highlight subunit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs subunit">layout: 分類<br>title: &#x27;標題&#x27;<br>date: 日期(格式必須為YYYY-MM-DD HH:MM:SS)<br>categories: 分類<br><span class="hljs-keyword">tags:</span> study<br>image: &#x27;是否放入圖片&#x27;<br>lead_text: &#x27;網頁描述&#x27;<br>```  <br><br>7. Jekyll 網站架構  <br></code></pre></td></tr></table></figure>
-<p>_data/global.yml  # 網站的基本設定資料<br>_includes/  # 存放網站中會重複使用的HTML檔<br>_layouots/  # 存放各頁面的HTMML檔<br>_posts/  # 在此處撰寫Markdowm文件(也可以加上一些基本的HTML和JS)，Jekyll會自動讀取顯示成文章<br>```<br>p.s. Markdown語法要換行要在結尾的部分空兩格  </p>
-</li>
-<li><p>完成後記得上傳到Github  </p>
-</li>
-<li><p>成功了~</p>
-</li>
-</ol>
-<h3 id="建立留言板"><a href="#建立留言板" class="headerlink" title="建立留言板"></a>建立留言板</h3><ol>
-<li><p>到<a target="_blank" rel="noopener" href="https://disqus.com/">Disqus</a>進行註冊<br><img src="https://i.imgur.com/mpAsfff.png" srcset="/img/loading.gif" lazyload></p>
-</li>
-<li><p>修改 _config.yml 檔<br><img src="https://i.imgur.com/5QLjzmT.png" srcset="/img/loading.gif" lazyload>  </p>
-</li>
-<li><p>在想顯示留言的內容下方加上下列程式<br>(在這裡貼上code會出現排版錯誤，下面列出如何取得這段程式碼)</p>
-</li>
-</ol>
-<ul>
-<li>進入Disqus官網，並登入<br><img src="https://i.imgur.com/5peiYLJ.png" srcset="/img/loading.gif" lazyload></li>
-<li>點選<br><img src="https://i.imgur.com/4C3lgAa.png" srcset="/img/loading.gif" lazyload>  </li>
-<li>複製這段程式碼到要顯示的位置<br><img src="https://i.imgur.com/m8GLIaV.png" srcset="/img/loading.gif" lazyload>  </li>
-</ul>
-<ol start="4">
-<li>成功了~<br><img src="https://i.imgur.com/Dx8dg3x.png" srcset="/img/loading.gif" lazyload></li>
-</ol>
-<h2 id="故障排除"><a href="#故障排除" class="headerlink" title="故障排除"></a>故障排除</h2><p>(在coding的瞬間，我多改了一點，bug不在遙遠 在你身邊~~)</p>
+<h2 id="使用素材"><a class="header-anchor" href="#使用素材"></a>使用素材</h2>
 <ol>
-<li>could not find ‘bundler’ required by …<br><img src="https://i.imgur.com/uv8K8KM.png" srcset="/img/loading.gif" lazyload><br>解決方法:<br>前提:需先關閉防毒軟體，才可以進行安裝<br>安裝:  </li>
+<li>Github 帳號</li>
+<li>Git bash</li>
+<li>Jekyll</li>
+<li>Disqus(加選)</li>
+<li>Github Desktop(加選)</li>
 </ol>
-<ul>
-<li> bundle update –bundler  </li>
-<li>   gem install bundler:1.13.7  </li>
-<li>   gem update –system  </li>
-<li>   執行啟動: bundle exec jekyll server  </li>
-</ul>
-<ol start="2">
-<li><p> jekyll server 報錯</p>
-<pre><code class="cmd">/Library/Ruby/Gems/2.3.0/gems/bundler-1.16.1/lib/bundler/runtime.rb:313:in check_for_activated_spec!’: You have already activated public_suffix 3.0.2, but your Gemfile requires public_suffix 3.0.0. Prepending bundle exec to your command may solve this. (Gem::LoadError)
+<h2 id="實作流程"><a class="header-anchor" href="#實作流程"></a>實作流程</h2>
+<h3 id="建立Github-Pages-倉庫"><a class="header-anchor" href="#建立Github-Pages-倉庫"></a>建立Github Pages 倉庫</h3>
+<ol>
+<li>建立 Github Pages 用的 Repository<br>
+<img src="https://i.imgur.com/3EIcPGX.png" srcset="/img/loading.gif" lazyload alt=""></li>
+<li>上傳blog或測試網頁<br>
+(可自己寫或使用現成版型，可以參考:<br>
+<a target="_blank" rel="noopener" href="http://jekyllthemes.org/">http://jekyllthemes.org/</a><br>
+<a target="_blank" rel="noopener" href="https://jekyllthemes.io/">https://jekyllthemes.io/</a><br>
+<a target="_blank" rel="noopener" href="https://jekyllthemes.io/free">https://jekyllthemes.io/free</a><br>
+)</li>
+<li>在 setting 點選網址即可執行<br>
+<img src="https://i.imgur.com/kSPhAtT.png" srcset="/img/loading.gif" lazyload alt=""></li>
+</ol>
+<h3 id="在本地端測試"><a class="header-anchor" href="#在本地端測試"></a>在本地端測試</h3>
+<ol>
+<li>
+<p>安裝 Jekyll 環境<br>
+目的為方便測試用<br>
+(詳細安裝步驟可參考https://wcc723.github.io/jekyll/2014/01/13/windows-jekyll-server/)</p>
+</li>
+<li>
+<p>開啟 Start Command Prompt with Ruby</p>
+</li>
+<li>
+<p>cmd cd 到你的網頁所在位置</p>
+</li>
+<li>
+<p>執行bundle exec jekyll server 即可預覽，預設port為4000</p>
+</li>
+<li>
+<p>(加選)可安裝Github Desktop 圖形化介面</p>
+</li>
+<li>
+<p>更改你的Blog內容<br>
+此處以我使用的 Blog 樣式作範例</p>
+</li>
+</ol>
+<figure class="highlight subunit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs subunit">layout: 分類<br>title: &#x27;標題&#x27;<br>date: 日期(格式必須為YYYY-MM-DD HH:MM:SS)<br>categories: 分類<br><span class="hljs-keyword">tags:</span> study<br>image: &#x27;是否放入圖片&#x27;<br>lead_text: &#x27;網頁描述&#x27;<br>```  <br><br>7. Jekyll 網站架構  <br></code></pre></td></tr></table></figure>
+<p>_data/global.yml  # 網站的基本設定資料<br>
+_includes/  # 存放網站中會重複使用的HTML檔<br>
+_layouots/  # 存放各頁面的HTMML檔<br>
+_posts/  # 在此處撰寫Markdowm文件(也可以加上一些基本的HTML和JS)，Jekyll會自動讀取顯示成文章</p>
+<pre><code>p.s. Markdown語法要換行要在結尾的部分空兩格  
+8. 完成後記得上傳到Github  
+
+9. 成功了~
+
+
+### 建立留言板
+1. 到[Disqus](https://disqus.com/)進行註冊  
+![](https://i.imgur.com/mpAsfff.png)
+
+2. 修改 _config.yml 檔  
+![](https://i.imgur.com/5QLjzmT.png)  
+
+3. 在想顯示留言的內容下方加上下列程式    
+(在這裡貼上code會出現排版錯誤，下面列出如何取得這段程式碼)
+* 進入Disqus官網，並登入  
+![](https://i.imgur.com/5peiYLJ.png)
+* 點選  
+![](https://i.imgur.com/4C3lgAa.png)  
+* 複製這段程式碼到要顯示的位置  
+![](https://i.imgur.com/m8GLIaV.png)  
+
+4. 成功了~  
+![](https://i.imgur.com/Dx8dg3x.png)
+
+
+## 故障排除
+(在coding的瞬間，我多改了一點，bug不在遙遠 在你身邊~~)
+1. could not find ‘bundler’ required by …  
+![](https://i.imgur.com/uv8K8KM.png)  
+解決方法:  
+前提:需先關閉防毒軟體，才可以進行安裝  
+安裝:  
+*  bundle update –bundler  
+*	gem install bundler:1.13.7  
+*	gem update –system  
+*	執行啟動: bundle exec jekyll server  
+
+2.  jekyll server 報錯
+```cmd
+/Library/Ruby/Gems/2.3.0/gems/bundler-1.16.1/lib/bundler/runtime.rb:313:in check_for_activated_spec!’: You have already activated public_suffix 3.0.2, but your Gemfile requires public_suffix 3.0.0. Prepending bundle exec to your command may solve this. (Gem::LoadError)
 </code></pre>
-<p>解決方法:<br>bundle exec jekyll server  </p>
+<p>解決方法:<br>
+bundle exec jekyll server</p>
+<ol start="3">
+<li>
+<p>The page build completed successfully, but returned the following warning for the <code>main</code> branch:<br>
+解決方法:<br>
+更改_config.yml<br>
+<img src="https://i.imgur.com/Xp8uebG.png" srcset="/img/loading.gif" lazyload alt=""></p>
 </li>
-<li><p> The page build completed successfully, but returned the following warning for the <code>main</code> branch:<br>解決方法:<br>更改_config.yml<br><img src="https://i.imgur.com/Xp8uebG.png" srcset="/img/loading.gif" lazyload>  </p>
-</li>
-<li><p>Could not read from remote repository.<br>解決方法:<br>git remote set-url origin <a target="_blank" rel="noopener" href="https://github.com/PanteraSama/landingPageResponsive.git">https://github.com/PanteraSama/landingPageResponsive.git</a>  </p>
+<li>
+<p>Could not read from remote repository.<br>
+解決方法:<br>
+git remote set-url origin <a target="_blank" rel="noopener" href="https://github.com/PanteraSama/landingPageResponsive.git">https://github.com/PanteraSama/landingPageResponsive.git</a></p>
 </li>
 </ol>
 <p><font color='red'>可能還有許多種的錯誤，族繁不及備載，請自行Google XD</font></p>
-<h2 id="參考網址"><a href="#參考網址" class="headerlink" title="參考網址"></a>參考網址</h2><p><a target="_blank" rel="noopener" href="https://jekyllrb.com/docs/">Jeykll官方文件</a><br><a target="_blank" rel="noopener" href="https://gist.github.com/JJediny/a466eed62cee30ad45e2">Jekyll模板語法</a><br><a target="_blank" rel="noopener" href="https://wcc723.github.io/jekyll/2014/01/13/windows-jekyll-server/">在Winodws上運作jekyll</a><br><a target="_blank" rel="noopener" href="https://www.itread01.com/iqhklc.html">Github Pages + jekyll 全面介紹極簡搭建個人網站和部落格</a></p>
+<h2 id="參考網址"><a class="header-anchor" href="#參考網址"></a>參考網址</h2>
+<p><a target="_blank" rel="noopener" href="https://jekyllrb.com/docs/">Jeykll官方文件</a><br>
+<a target="_blank" rel="noopener" href="https://gist.github.com/JJediny/a466eed62cee30ad45e2">Jekyll模板語法</a><br>
+<a target="_blank" rel="noopener" href="https://wcc723.github.io/jekyll/2014/01/13/windows-jekyll-server/">在Winodws上運作jekyll</a><br>
+<a target="_blank" rel="noopener" href="https://www.itread01.com/iqhklc.html">Github Pages + jekyll 全面介紹極簡搭建個人網站和部落格</a></p>
 
             </div>
             <hr>

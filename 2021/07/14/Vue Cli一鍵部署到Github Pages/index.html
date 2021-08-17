@@ -249,32 +249,51 @@
             
             <div class="markdown-body">
               <p><em>記錄自己在學習 Vue Cli 時，使用自動化指令，佈署到 Github Pages 的過程</em></p>
-<h2 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h2><ol>
+<h2 id="流程"><a class="header-anchor" href="#流程"></a>流程</h2>
+<ol>
 <li>建立要存放的 repositories</li>
 <li>設定部署路徑</li>
 <li>撰寫 shell 檔案</li>
 <li>查看</li>
 </ol>
-<h2 id="建立要存放的-repositories"><a href="#建立要存放的-repositories" class="headerlink" title="建立要存放的 repositories"></a>建立要存放的 repositories</h2><p><font color='red'>這裡建議一個 Vue 專案放在一個 repositories</font></p>
-<h3 id="1-到-Github-建立帳號"><a href="#1-到-Github-建立帳號" class="headerlink" title="1.到 Github 建立帳號"></a>1.到 Github 建立帳號</h3><p>此處不多做說明</p>
-<h3 id="2-開啟你的-Vue-專案"><a href="#2-開啟你的-Vue-專案" class="headerlink" title="2.開啟你的 Vue 專案"></a>2.開啟你的 Vue 專案</h3><p>此處不多做說明</p>
-<h2 id="設定部署路徑"><a href="#設定部署路徑" class="headerlink" title="設定部署路徑"></a>設定部署路徑</h2><p>建立 vue.config.js 檔，檔案位置為<br><img src="https://i.imgur.com/2UaH1Lr.png" srcset="/img/loading.gif" lazyload><br>參考助教提供的檔案</p>
+<h2 id="建立要存放的-repositories"><a class="header-anchor" href="#建立要存放的-repositories"></a>建立要存放的 repositories</h2>
+<p><font color='red'>這裡建議一個 Vue 專案放在一個 repositories</font></p>
+<h3 id="1-到-Github-建立帳號"><a class="header-anchor" href="#1-到-Github-建立帳號"></a>1.到 Github 建立帳號</h3>
+<p>此處不多做說明</p>
+<h3 id="2-開啟你的-Vue-專案"><a class="header-anchor" href="#2-開啟你的-Vue-專案"></a>2.開啟你的 Vue 專案</h3>
+<p>此處不多做說明</p>
+<h2 id="設定部署路徑"><a class="header-anchor" href="#設定部署路徑"></a>設定部署路徑</h2>
+<p>建立 vue.config.js 檔，檔案位置為<br>
+<img src="https://i.imgur.com/2UaH1Lr.png" srcset="/img/loading.gif" lazyload alt=""><br>
+參考助教提供的檔案</p>
 <figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs coffeescript"><span class="hljs-built_in">module</span>.<span class="hljs-built_in">exports</span> = &#123;<br>  publicPath: process.env.NODE_ENV === <span class="hljs-string">&#x27;production&#x27;</span><br>    ? <span class="hljs-string">&#x27;/repoName/&#x27;</span><br>    : <span class="hljs-string">&#x27;/&#x27;</span><br>&#125;<br></code></pre></td></tr></table></figure>
-<p>這時出現錯誤，不管怎麼試 Github Pages 頁面都是空白的，<br>經過組員的建議，自己修改為</p>
+<p>這時出現錯誤，不管怎麼試 Github Pages 頁面都是空白的，<br>
+經過組員的建議，自己修改為</p>
 <figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs coffeescript"><span class="hljs-built_in">module</span>.<span class="hljs-built_in">exports</span> = &#123;<br>  publicPath: <span class="hljs-string">&quot;/&lt;repositories&gt;/dist/&quot;</span>,<br>&#125;;<br></code></pre></td></tr></table></figure>
-<h2 id="撰寫-shell-檔案"><a href="#撰寫-shell-檔案" class="headerlink" title="撰寫 shell 檔案"></a>撰寫 shell 檔案</h2><p>建立 deploy.sh 檔，檔案位置為<br><img src="https://i.imgur.com/JUZJWOS.png" srcset="/img/loading.gif" lazyload></p>
+<h2 id="撰寫-shell-檔案"><a class="header-anchor" href="#撰寫-shell-檔案"></a>撰寫 shell 檔案</h2>
+<p>建立 <a target="_blank" rel="noopener" href="http://deploy.sh">deploy.sh</a> 檔，檔案位置為<br>
+<img src="https://i.imgur.com/JUZJWOS.png" srcset="/img/loading.gif" lazyload alt=""></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-meta">#!/usr/bin/env sh</span><br><br><span class="hljs-comment"># 發生錯誤時執行終止指令</span><br><span class="hljs-built_in">set</span> -e<br><br><span class="hljs-comment"># 打包編譯</span><br>npm run build<br><br><span class="hljs-comment"># 移動到打包資料夾下(若要上傳全部檔案要註解這行)</span><br><span class="hljs-built_in">cd</span> dist<br><br><span class="hljs-comment"># 部署到自定義網域</span><br><span class="hljs-comment"># echo &#x27;www.example.com&#x27; &gt; CNAME</span><br><br>git init<br>git add -A<br>git commit -m <span class="hljs-string">&#x27;描述內容&#x27;</span><br><br><span class="hljs-comment"># 部署到 https://&lt;USERNAME&gt;.github.io/&lt;REPO&gt; master可為gh-pages 或 main(預設值)</span><br>git push -f git@github.com:username/repository.git master:gh-pages<br><br><span class="hljs-built_in">cd</span> -<br><br></code></pre></td></tr></table></figure>
 <ul>
-<li><p>此處注意要修改部署的位置<br>取得 repositories 位址<br><img src="https://i.imgur.com/1rSqXnF.png" srcset="/img/loading.gif" lazyload></p>
+<li>
+<p>此處注意要修改部署的位置<br>
+取得 repositories 位址<br>
+<img src="https://i.imgur.com/1rSqXnF.png" srcset="/img/loading.gif" lazyload alt=""></p>
 </li>
-<li><p>修改上傳內容<br>原先助教提供的檔案中只會上傳 dist 資料夾中的內容，將 cd dist 註解即可上傳全部內容</p>
+<li>
+<p>修改上傳內容<br>
+原先助教提供的檔案中只會上傳 dist 資料夾中的內容，將 cd dist 註解即可上傳全部內容</p>
 </li>
-<li><p>注意每次 npm run build 後會自動生成 dist 內的檔案</p>
+<li>
+<p>注意每次 npm run build 後會自動生成 dist 內的檔案</p>
 </li>
 </ul>
-<h2 id="到你的-Github-Pages-查看"><a href="#到你的-Github-Pages-查看" class="headerlink" title="到你的 Github Pages 查看"></a>到你的 Github Pages 查看</h2><p><img src="https://i.imgur.com/Fz5yulO.png" srcset="/img/loading.gif" lazyload></p>
-<p><img src="https://i.imgur.com/jVb1w3c.png" srcset="/img/loading.gif" lazyload><br>成功</p>
-<h2 id="參考來源"><a href="#參考來源" class="headerlink" title="參考來源"></a>參考來源</h2><p><a target="_blank" rel="noopener" href="https://tzuhui.github.io/2020/03/02/Vue/Vue-CLI3-to-github-pages/">想飛的葉子</a></p>
+<h2 id="到你的-Github-Pages-查看"><a class="header-anchor" href="#到你的-Github-Pages-查看"></a>到你的 Github Pages 查看</h2>
+<p><img src="https://i.imgur.com/Fz5yulO.png" srcset="/img/loading.gif" lazyload alt=""></p>
+<p><img src="https://i.imgur.com/jVb1w3c.png" srcset="/img/loading.gif" lazyload alt=""><br>
+成功</p>
+<h2 id="參考來源"><a class="header-anchor" href="#參考來源"></a>參考來源</h2>
+<p><a target="_blank" rel="noopener" href="https://tzuhui.github.io/2020/03/02/Vue/Vue-CLI3-to-github-pages/">想飛的葉子</a></p>
 
             </div>
             <hr>
